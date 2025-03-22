@@ -68,7 +68,7 @@ function spawnBoss() {
   boss = {
     x: canvas.width / 2 - 50,
     y: 50,
-    width: 100,
+    width: 50,
     height: 50,
     color: 'purple',
     speed: 2,
@@ -80,7 +80,7 @@ function spawnBoss() {
   // Boss shoots projectiles every 2 seconds
   setInterval(() => {
     if (boss) {
-      const projectileSpeed = 4;
+      const projectileSpeed = 6;
       boss.projectiles.push({
         x: boss.x + boss.width / 2 - 5,
         y: boss.y + boss.height,
